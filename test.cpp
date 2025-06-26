@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    return 0;
-}
+class Solution {
+public:
+    void printNumber() {
+        int n;
+        cin>>n;
+        cout<<n;
+    }
+};
