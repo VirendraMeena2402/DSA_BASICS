@@ -12,7 +12,7 @@ public:
         }
 
         int maxFreq = 0;
-        int result = INT_MAX;
+        int result = arr[0];  
 
         for (auto& entry : freq) {
             int num = entry.first;
