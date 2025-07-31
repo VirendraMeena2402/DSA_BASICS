@@ -1,4 +1,4 @@
-# 📘 DSA Basics: 8-Week Learning Plan
+# DSA Basics: 8-Week Learning Plan
 
 Welcome to the *DSA Basics* 8-week roadmap. This structured plan is designed for beginners aiming to build a strong foundation in *Data Structures and Algorithms (DSA)*. By the end, you'll be equipped with the problem-solving skills needed to tackle a wide range of coding problems.
 
@@ -131,5 +131,3 @@ Once you're confident with the basics, move to:
 - Segment Trees and Fenwick Trees
 
 ---
-
-Happy Coding! 🚀
