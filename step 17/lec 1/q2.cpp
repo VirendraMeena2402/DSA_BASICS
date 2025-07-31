@@ -1,5 +1,6 @@
 #include <vector>
 #include <algorithm>
+#include <array>
 using namespace std;
 
 struct TrieNode {
