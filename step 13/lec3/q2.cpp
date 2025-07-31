@@ -1,6 +1,7 @@
 #include <queue>
 #include <utility>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 struct TreeNode {
@@ -19,15 +20,17 @@ public:
         q.push({root, 0});
         while (!q.empty()) {
             int size = q.size();
-            unsigned long long left = q.front().second, right = left;
+            unsigned long long left = q.front().second;
+            unsigned long long right = left;
             for (int i = 0; i < size; i++) {
                 auto [node, idx] = q.front();
                 q.pop();
+                idx -= left; // normalize index
                 right = idx;
                 if (node->left) q.push({node->left, 2 * idx});
                 if (node->right) q.push({node->right, 2 * idx + 1});
             }
-            maxWidth = max(maxWidth, right - left + 1);
+            maxWidth = max(maxWidth, (long long)(right + 1)); // ✅ Cast to same type
         }
         return (int)maxWidth;
     }
